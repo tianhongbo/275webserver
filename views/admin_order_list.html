@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Mini Hotel</a>
+            <a class="navbar-brand" href="admin_order_list.html">Mini Hotel</a>
         </div>
         <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"> Today is:
             <span id="spantodaydate"></span>
@@ -38,13 +38,42 @@
         <div class="sidebar-collapse">
             <ul class="nav" id="main-menu">
                 <li class="text-center">
-                    <img src="assets/img/admin_user.jpg" class="user-image img-responsive"/>
+                    <img src="assets/img/admin_user.png" class="user-image img-responsive"/>
                 </li>
                 <li>
                     <a href="admin.html"><i class="fa fa-dashboard fa-3x"></i> Report</a>
                 </li>
                 <li>
-                    <a  href="#"><i class="fa fa-laptop fa-3x"></i> Guest Service<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-table fa-3x"></i> Room Management<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="admin_room_management_add.html">Add Room</a>
+                        </li>
+                        <li>
+                            <a href="admin_room_management_delete.html">Delete Room</a>
+                        </li>
+                        <li>
+                            <a href="admin_room_management_list.html">List Room</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a  href="#"><i class="fa fa-edit fa-3x"></i> User Management<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="admin_user_management_add.html">Add User</a>
+                        </li>
+                        <li>
+                            <a href="admin_user_management_delete.html">Delete User</a>
+                        </li>
+                        <li>
+                            <a href="admin_user_management_list.html">List User</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="active-menu" href="#"><i class="fa fa-laptop fa-3x"></i> Guest Service<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a href="admin_order_check_in.html">Check In</a>
@@ -53,7 +82,7 @@
                             <a href="admin_order_check_out.html">Check Out</a>
                         </li>
                         <li>
-                            <a href="agent_order_list.html">List Orders</a>
+                            <a href="admin_order_list.html">List Orders</a>
                         </li>
                     </ul>
                 </li>
@@ -62,16 +91,16 @@
                     <a  href="#"><i class="fa fa-sitemap fa-3x"></i> Reservation Service<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="agent_reservation_create.html">Make Reservation</a>
+                            <a href="admin_reservation_create.html">Make Reservation</a>
                         </li>
                         <li>
-                            <a href="agent_reservation_cancel.html">Cancel Reservation</a>
+                            <a href="admin_reservation_cancel.html">Cancel Reservation</a>
                         </li>
                         <li>
-                            <a href="agent_reservation_query.html">Search Reservation</a>
+                            <a href="admin_reservation_query.html">Search Reservation</a>
                         </li>
                         <li>
-                            <a href="agent_reservation_list.html">List Reservation</a>
+                            <a href="admin_reservation_list.html">List Reservation</a>
                         </li>
                     </ul>
 

@@ -10,7 +10,7 @@
    
     ========================================================  */
 //please update this host for each deployment
-var apiserverhost = "http://2dfb72f0.ngrok.io";
+var apiserverhost = "http://localhost:8080";
 
 (function ($) {
     "use strict";
