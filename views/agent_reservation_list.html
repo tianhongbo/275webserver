@@ -115,10 +115,12 @@
                                                 <th>e-mail</th>
                                                 <th>Check In Date</th>
                                                 <th>Check Out Date</th>
+                                                <th>Status</th>
                                             </tr>
                                             </thead>
                                             <tbody id="dataTables-listreservation">
                                             <tr name= "odd gradeX">
+                                                <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -245,6 +247,11 @@
             cell = document.createElement("td");
             var date = new Date(object.checkoutDate);
             var cellText = document.createTextNode((date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear());
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+
+            cell = document.createElement("td");
+            cellText = document.createTextNode(object.status);
             cell.appendChild(cellText);
             row.appendChild(cell);
 

@@ -127,7 +127,18 @@
                         <div class="panel-body">
                             <div class="row">
                                 <form role="form" name="checkinform" onsubmit="return checkin();">
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
+                                        <script type="text/javascript">
+                                            function updateTextInput(val) {
+                                                document.getElementById('textInput').value=val;
+                                            }
+                                        </script>
+                                        <label>Discount(%)</label>
+                                        <input type="text" id="textInput" value="20">
+                                        <input type="range" name='discount' id="discount" min="10" max="30" onchange="updateTextInput(this.value);">
+                                    </div>
+
+                                    <div class="col-md-6">
                                         <button type="submit" class="btn btn-primary">Click to check in</button>
                                     </div>
                                 </form>
@@ -302,6 +313,7 @@
         //http://localhost:8080/api/v1/orders/1
         var urlsearch = apiserverhost + "/api/v1/orders/";
         urlsearch += form.reservationid.value;
+        urlsearch += "?discount=" + document.checkinform.discount.value;
 
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
